@@ -3,8 +3,11 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions( plugin = {"pretty", "html:target/cucumber"},
-        glue = {"Glue"})
+@CucumberOptions(
+        strict = true,
+        features = {"src/test/resources"},
+        plugin = {"json:target/cucumber.json"}
+)
 
 public class RunTest {
 
