@@ -17,7 +17,6 @@ public class CatsTest extends BaseAbstract {
     @And("bla bla")
     public void blaBla() {
         BaseAbstract.logger.info("=============");
-        Assert.assertTrue(false);
     }
 
     @When("^My cat havn't name$")
